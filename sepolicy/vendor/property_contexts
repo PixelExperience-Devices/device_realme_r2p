@@ -34,6 +34,7 @@ ro.camera.res.fmq.size                           u:object_r:vendor_ro_camera_pro
 ro.camera.sensor.aux2m				 u:object_r:vendor_ro_camera_prop:s0
 
 # Fingerprint
+fpc_kpi                                          u:object_r:oppo_fp_prop:s0
 oppo.fpc.sw.version                              u:object_r:oppo_fp_prop:s0
 persist.vendor.fingerprint.                      u:object_r:oppo_fp_prop:s0
 
