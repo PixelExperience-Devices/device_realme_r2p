@@ -189,6 +189,10 @@ vendor.display.enable_default_color_mode=1
 vendor.display.qdcm.mode_combine=1
 vendor.gralloc.enable_fb_ubwc=1
 
+# SoC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SDM660
+
 # Time-Service
 persist.vendor.delta_time.enable=true
 
