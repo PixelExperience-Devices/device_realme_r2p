@@ -190,7 +190,7 @@ vendor.display.qdcm.mode_combine=1
 vendor.gralloc.enable_fb_ubwc=1
 
 # SoC
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 ro.soc.model=SDM660
 
 # Time-Service
