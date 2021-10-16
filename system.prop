@@ -89,3 +89,6 @@ ro.vendor.sensors.sta_detect=true
 # SSR
 persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# IORap
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
