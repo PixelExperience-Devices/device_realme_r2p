@@ -139,7 +139,6 @@ system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
 # Camera
 vendor/lib/hw/camera.sdm660.so
-vendor/lib/libbase64.so
 vendor/lib/libcamera_core_hwi.so
 vendor/lib/libcvface_api.so
 vendor/lib/libdepthmap.so
@@ -183,7 +182,6 @@ vendor/lib/libVDRTImageAdjustment.so
 vendor/lib/libVDSuperPhotoAPI.so
 vendor/lib/libVDUpScale.so
 vendor/lib/libvideoutils.so
-vendor/lib64/libbase64.so
 vendor/lib64/libDxHdcp.so
 vendor/lib64/libseemore.so
 vendor/lib64/libstface_fd_api.so
@@ -2650,56 +2648,49 @@ vendor/lib64/libdpmqmihal.so
 # DPM - from oneplus8 - qssi-user-11-RP1A.201005.001-2009051300-release-keys
 system_ext/lib64/libdpmframework.so|67ebd736333ae7158632735e3db06a4f9664f6a6
 
-# DRM
-vendor/bin/qseecomd
-vendor/lib/libQSEEComAPI.so
-vendor/lib/libsdedrm.so
-vendor/lib64/libcpion.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libGPQTEEC_vendor.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/libqcbor.so
-vendor/lib64/libqisl.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/librmp.so
-vendor/lib64/librpmb.so
-vendor/lib64/librpmbengclient.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsecureui.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libsi.so
-vendor/lib64/libssd.so
-vendor/lib64/libStDrvInt.so
-vendor/lib64/libtzdrmgenprov.so
+# DRM - from LA.UM.9.6.2.r1-04100-89xx.0
+vendor/bin/qseecomd|80c97092e609e00057e4037da490c54b09205be0
+vendor/lib/libQSEEComAPI.so|90a357a7068c37d0dd1b6428981b27243f6f0c28
+vendor/lib/libsdedrm.so|8647931b94c2748c0d1cfd67b05d28bf3d74f987
+vendor/lib64/libGPreqcancel.so|d3278679f75371f7d6813f69ee04cda66e46b445
+vendor/lib64/libGPreqcancel_svc.so|817fced1daa7913b363fdbebf2e0587e1f34b8eb
+vendor/lib64/libQSEEComAPI.so|5d10cbc93360fbb8fce662e2e7c787441f978b26
+vendor/lib64/libbase64.so|4f065f1457eebe27057faafec5f12e5ef230e13f
+vendor/lib64/libdrmfs.so|071f9238bfa70ebd9d28748a21f6bb3297057d49
+vendor/lib64/libdrmtime.so|2d53dd4f3d0ee920263a89f6e6d4acad837ca672
+vendor/lib64/libqisl.so|e9c402aed643ee094daaf495f1a3a1f29542d602
+vendor/lib64/librmp.so|a673d71446ff12c8b3c696a8e7d91d121002f6a7
+vendor/lib64/librpmb.so|9a9e747080c33f14bc0457e7d65e3c09fa5bff87
+vendor/lib64/libSecureUILib.so|f490abdef04ca0806ebcc9efde7acab628294178
+vendor/lib64/libsecureui.so|226528da5a2a2caf64ad6cab536b370f974333b8
+vendor/lib64/libsecureui_svcsock.so|2232f56927964f10d41868919d94711930d50ed0
+vendor/lib64/libsdedrm.so|0ad1df1bb8d191e2caa4e5db0f4101d5ed9ae3f9
+vendor/lib64/libsi.so|87de1f70ff74a2d76fabcaf52aeb4528f7f82a6c
+vendor/lib64/libssd.so|9c7850a06f6caf5b3dc6ac1269a5b0be9f4fcde7
+vendor/lib64/libStDrvInt.so|add517206707a8bd7f116b6b1554a16c51fe6668
+vendor/lib64/libtzdrmgenprov.so|1105403905ff4665ce619f6ea2eede131771bf96
 
-# DRM-HDCP
-vendor/bin/hdcp1prov
-vendor/bin/hdcp2p2prov
-vendor/lib/libhdcp1prov.so
-vendor/lib/libhdcp2p2prov.so
-vendor/lib/libhdcpsrm.so
-vendor/lib64/libhdcp1prov.so
-vendor/lib64/libhdcp2p2prov.so
-vendor/lib64/libhdcpsrm.so
-vendor/lib64/libmm-hdcpmgr.so
+# DRM-Qteeconnector - from LA.UM.9.6.2.r1-04100-89xx.0
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|f8dc88c7166ffc2c1d997e7d5f16a8eb69c37cfc
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|b938db8f4135d056a998a4dbd07860b2778d9948
+vendor/lib/libQTEEConnector_vendor.so|8cf24406730b9433f7b93c5af2cbd820bde0716f
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|1ca5f602c9e36fddfa9c2d671e4b96d1b2bdaeb3
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|ccc51a52996f2f0bf9581f28d1bf00f12af8c5bc
+vendor/lib64/libQTEEConnector_vendor.so|62d8993f51e0d4a0c4d6ae2645512ddfc76577f3
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|8c7e2bebeeb0a45737b1c38b193b8e01beb9d6ae
 
-# DRM-Qteeconnector
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+# DRM-Widevine - from phoenix_sprout - RKQ1.201123.002
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|7c65a818f9c3d00051698e2a51425058083d69c4
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+vendor/lib64/libcpion.so|0a6999ca33dea3bed4301106fc225f9b11b9f289
+vendor/lib64/liboemcrypto.so|c813d9e8798c6602656e124bf71b078ff6be55bd
+vendor/lib64/libwvhidl.so|6a391723bb40d8d7ee09012fe9c31f0122e4a84f
 
-# DRM-Widevine
-oppo_version/vendor_overlay/29/lib/liboemcrypto.so:vendor/lib/liboemcrypto.so
-oppo_version/vendor_overlay/29/lib/liboemcrypto.so:vendor/lib/liboemcrypto.so
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
-vendor/lib64/libwvhidl.so
+# DRM-Widevine-HDCP - from phoenix_sprout - RKQ1.201123.002
+vendor/lib64/libhdcpsrm.so|affdc2195766c34226510dd422fbf22f689b25b2
+vendor/lib64/libmm-hdcpmgr.so|99cf7e11c8e08ddb92deb8fbd514cf874bedaf63
 
 # Display-calibration
 vendor/etc/qdcm_calib_data_oppo18316himax_hx83112a_1080_2340_video_mode_dsi_panel.xml
