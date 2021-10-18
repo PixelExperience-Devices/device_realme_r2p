@@ -70,6 +70,9 @@ ro.netflix.bsp_rev=Q660-13149-1
 # QC framework value-adds
 ro.vendor.qti.va_odm.support=1
 
+# Recovery
+persist.sys.binary_xml=false
+
 # RIL
 DEVICE_PROVISIONED=1
 gsm.lte.ca.support=0
