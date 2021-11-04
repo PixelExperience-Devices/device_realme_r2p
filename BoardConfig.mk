@@ -47,7 +47,6 @@ TARGET_KERNEL_CONFIG := RMX1801_defconfig
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Assert
-TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := r2p,RMX1801
 
 # Audio
@@ -132,10 +131,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
-
-# Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_r2p
-TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
