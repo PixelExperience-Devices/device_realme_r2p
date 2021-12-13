@@ -35,6 +35,7 @@ on init
     write /dev/stune/system-background/schedtune.colocate 0
     write /dev/stune/foreground/schedtune.colocate 0
     write /dev/stune/top-app/schedtune.colocate 1
+    write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
@@ -65,21 +66,18 @@ on post-fs
     wait_for_prop vendor.sys.listeners.registered true
     write /dev/ipa 1
 
-on init
-    write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
-
 on post-fs-data
     mkdir /data/vendor/hbtp 0750 system system
 
 on boot
     start vendor.rmt_storage
-    start rfs_access
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-7
     write /dev/cpuset/foreground/boost/cpus 0-7
     write /dev/cpuset/background/cpus 0-3
     write /dev/cpuset/system-background/cpus 0-7
-    ####Regionalization config and prop files####
+
+    #Regionalization config and prop files
     chmod 0644 /persist/speccfg/spec
     chmod 0644 /persist/speccfg/devicetype
     chmod 0644 /persist/speccfg/mbnversion
@@ -97,10 +95,10 @@ on boot
     chown system system /persist/speccfg/submask
     chown system system /persist/speccfg/partition
 
-#Create folder dump yuv images while debugging
+    #Create folder dump yuv images while debugging
     mkdir /data/vendor/camera 0770 camera camera
 
-#USB controller configuration
+    #USB controller configuration
     setprop vendor.usb.rndis.func.name "rndis_bam"
     setprop vendor.usb.rmnet.func.name "rmnet_bam"
     setprop vendor.usb.rmnet.inst.name "rmnet"
