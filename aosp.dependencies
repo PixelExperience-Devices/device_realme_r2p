@@ -9,6 +9,6 @@
     "repository" : "kernel_realme_sdm660",
     "target_path": "kernel/realme/sdm660",
     "remote"     : "pixel-devices",
-    "branch"     : "eleven"
+    "branch"     : "twelve"
   }
 ]
