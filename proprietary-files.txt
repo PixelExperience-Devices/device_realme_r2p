@@ -224,15 +224,15 @@ vendor/lib/libarcsoft_videostabilizer.so
 vendor/lib/libarcvs.dep.so
 vendor/lib/libarcvs.so
 
-# Camera calibration files
-etc/camera/cp/CPCalibrationData.bin
-etc/camera/cp/FusionCalibrationParams.bin
-etc/camera/cp/SystemParamsBokeh.bin
-etc/camera/cp/SystemParamsFusion.bin
-etc/camera/faceTpl0.rgb32
-etc/camera/faceTpl1.rgb32
-etc/camera/gasryuv.model
-etc/camera/skinSeg.model
+# Camera (Calibration)
+etc/camera/cp/CPCalibrationData.bin:vendor/etc/camera/cp/CPCalibrationData.bin
+etc/camera/cp/FusionCalibrationParams.bin:vendor/etc/camera/cp/FusionCalibrationParams.bin
+etc/camera/cp/SystemParamsBokeh.bin:vendor/etc/camera/cp/SystemParamsBokeh.bin
+etc/camera/cp/SystemParamsFusion.bin:vendor/etc/camera/cp/SystemParamsFusion.bin
+etc/camera/faceTpl0.rgb32:vendor/etc/camera/faceTpl0.rgb32
+etc/camera/faceTpl1.rgb32:vendor/etc/camera/faceTpl1.rgb32
+etc/camera/gasryuv.model:vendor/etc/camera/gasryuv.model
+etc/camera/skinSeg.model:vendor/etc/camera/skinSeg.model
 vendor/etc/camera/ashdr/ncf_pack.ncf
 vendor/etc/DxHDCP.cfg
 
