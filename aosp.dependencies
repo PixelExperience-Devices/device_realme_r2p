@@ -1,14 +1,14 @@
 [
   {
-    "repository" : "vendor_realme_r2p",
+    "repository" : "ad1tyas1ngh/vendor_realme_r2p",
     "target_path": "vendor/realme/r2p",
-    "remote"     : "pixel-devices-blobs",
-    "branch"     : "eleven"
+    "remote"     : "github",
+    "branch"     : "S"
   },
   {
     "repository" : "kernel_realme_sdm660",
     "target_path": "kernel/realme/sdm660",
     "remote"     : "pixel-devices",
-    "branch"     : "eleven"
+    "branch"     : "twelve"
   }
 ]
